@@ -1,0 +1,172 @@
+/* Adaptive for 768 width */
+@media (max-width: 768px) {
+  .container {
+    overflow-x: hidden;
+  }
+  .header {
+    height: 108px;
+    gap: 32px;
+  }
+  .header-logo {
+    padding: 0 32px;
+  }
+  .navbar .navbar__inner > li > a {
+    color: #000;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  /*OFFER BLOCK*/
+  .offer_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .offer__inner {
+    margin-bottom: 200px;
+  }
+  .fd_block_title h4 {
+    font-size: 20px;
+  }
+  .maps_inner {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+  .map_block {
+    height: 500px;
+  }
+  .cont_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont_link {
+    margin-bottom: 40px;
+  }
+  .offer_bg {
+    display: none;
+  }
+  .offer_title {
+    text-align: center;
+  }
+  .offer_title h2 {
+    font-size: 30px;
+  }
+  .offer_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider_wrap {
+    margin: 0;
+  }
+  .feedback_title {
+    line-height: 30px;
+  }
+  /*SLIDER BLOCK*/
+  .slider_wrap {
+    max-width: 300px;
+  }
+}
+
+/* Adaptive for 320 width */
+@media (max-width: 320px) {
+  .header {
+    margin-bottom: 10px;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+  .header {
+    height: 108px;
+    gap: 32px;
+  }
+  .header-logo {
+    display: none;
+    padding: 0 32px;
+  }
+  .navbar .navbar__inner > li > a {
+    color: #000;
+    font-size: 8px;
+    font-weight: 200;
+  }
+  .info__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .info_titles h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .info_titles > h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+  }
+  /*OFFER INNER*/
+  .offer__inner {
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 100px;
+  }
+  .offer_title h2 {
+    font-size: 30px;
+  }
+  /*FEEDBACK*/
+  .feedback_title {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .fd_block_title h4 {
+    font-size: 12px;
+  }
+  .feedback_block {
+    margin: 0px;
+  }
+  .fd_block_title img {
+    display: none;
+  }
+  .feedback_descr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  /*SLIDER BLOCK */
+  .slick-prev:before {
+    content: "<";
+    font-size: 30px;
+  }
+  .slick-next:before {
+    content: ">";
+    font-size: 30px;
+  }
+  /*MAPS*/
+  .maps__inner {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+  .map_block {
+    height: 500px;
+  }
+  .contact_title {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    margin-bottom: 50px;
+  }
+  /*FOOTER*/
+  .cont_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont_link {
+    margin-bottom: 60px;
+    width: 22px;
+    height: 22px;
+  }
+}
