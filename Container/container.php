@@ -21,16 +21,16 @@
       <nav class="navbar">
         <ul class="navbar__inner">
           <li>
-            <a href="#">О компании</a>
+            <a href="../index.php">О компании</a>
           </li>
           <li>
-            <a href="#">Примеры работ</a>
+            <a href="../information.php">Примеры работ</a>
           </li>
           <li>
-            <a href="#">Услуги</a>
+            <a href="container.php">Услуги</a>
           </li>
           <li>
-            <a href="#">Гарантии</a>
+            <a href="../login.php">Регистрация</a>
           </li>
         </ul>
       </nav>

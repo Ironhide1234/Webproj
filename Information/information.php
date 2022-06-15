@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html">
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,16 +22,16 @@
       <nav class="navbar">
         <ul class="navbar__inner">
           <li>
-            <a href="#">О компании</a>
+            <a href="../index.php">О компании</a>
           </li>
           <li>
-            <a href="#">Примеры работ</a>
+            <a href="information.php">Примеры работ</a>
           </li>
           <li>
-            <a href="#">Услуги</a>
+            <a href="../Container/container.php">Услуги</a>
           </li>
           <li>
-            <a href="#">Гарантии</a>
+            <a href="../login.php">Регистрация</a>
           </li>
         </ul>
       </nav>
