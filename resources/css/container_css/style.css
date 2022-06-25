@@ -1,0 +1,270 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 24%) 0 0 0 20px inset;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+sub,
+sup {
+  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer land_reset.css, this is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+
+sub {
+  /* Move the subscripted text down, but only half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+/* CONTAINER */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  gap: 172px;
+  height: 128px;
+  max-height: 200px;
+  margin-bottom: 48px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 72px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff00;
+  width: 100%;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.navbar__inner {
+  display: flex;
+  gap: 45px;
+}
+
+.navbar__inner > li {
+  position: relative;
+}
+
+.navbar__inner > li::before {
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: #000;
+  bottom: -5px;
+}
+
+.navbar__inner > li > a {
+  color: #000;
+  font-weight: 200;
+}
+/*CONTAINER SERVICES*/
+.cont_title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.cont_title > h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 49px;
+}
+.cont_services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.cont_block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #c4c4c4;
+  border-radius: 40px;
+}
+.cont_block:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+.cont_img img {
+  border-radius: 40px;
+  padding: 24px;
+  width: 300px;
+  height: 300px;
+}
+.cont_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.cont_info p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+.cont_info button {
+  border: none;
+  background: #ffff00;
+  border-radius: 20px;
+  padding: 24px 54px;
+  margin-bottom: 20px;
+}
+.cont_info button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+.cont_info button a {
+  color: #000;
+}
+.cont_info a {
+  color: #000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: 0.3s;
+}
+.cont_info a:hover {
+  background-size: 100% 1px;
+}
+/*SLIDER BLOCK*/
+.portfolio_info {
+  position: relative;
+  margin-bottom: 100px;
+}
+.portfolio_info > .portfolio_bg {
+  position: absolute;
+  top: 0;
+  height: 726px;
+  z-index: -1;
+  width: 51.25%;
+}
+.portfolio_title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 47px;
+  text-align: center;
+  padding-top: 95px;
+}
+
+.slider_main {
+  overflow: hidden;
+  margin-top: 80px;
+}
+.slider_line {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+.slider_img img {
+  width: 350px;
+  height: 350px;
+}
+
+.slider_arrows {
+  padding: 40px;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.slider_arrows:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.slider_buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+/*PRICES BLOCK*/
+
+/* .price_block:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+} */
+
+/*FOOTER SECTION*/
+
+.contact_title {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+.cont__inner {
+  padding: 30px;
+}
+.cont_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.cont_link img {
+  width: 50px;
+  height: 50px;
+}
