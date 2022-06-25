@@ -1,0 +1,290 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 24%) 0 0 0 20px inset;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+sub,
+sup {
+  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer land_reset.css, this is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+
+sub {
+  /* Move the subscripted text down, but only half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+/* CONTAINER */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  gap: 172px;
+  height: 128px;
+  max-height: 200px;
+  margin-bottom: 48px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 72px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff00;
+  width: 100%;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.navbar__inner {
+  display: flex;
+  gap: 45px;
+}
+
+.navbar__inner > li {
+  position: relative;
+}
+
+.navbar__inner > li::before {
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: #000;
+  bottom: -5px;
+}
+
+.navbar__inner > li > a {
+  color: #000;
+  font-weight: 200;
+}
+
+/* OFFER BLOCK */
+.offer__inner {
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 150px;
+}
+.offer_wrap {
+  display: flex;
+}
+.offer_title {
+  margin-bottom: 40px;
+}
+.offer_title > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+}
+.offer_list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.offer_block > p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+}
+.offer__inner > .offer_bg {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  height: 726px;
+  width: 100%;
+  z-index: -1;
+}
+.slider_wrap {
+  max-width: 600px;
+  margin-right: 100px;
+}
+.slick-next {
+  right: 30px;
+}
+.slick-prev {
+  left: 30px;
+  z-index: 1;
+}
+.slick-prev:before {
+  content: "<";
+  font-size: 40px;
+}
+.slick-next:before {
+  content: ">";
+  font-size: 40px;
+}
+.slick-dots li button:before {
+  font-size: 30px;
+}
+.offer_img {
+  max-width: 100%;
+}
+.offer_img_inn {
+  width: 100%;
+}
+.slider {
+  margin-right: 60px;
+}
+.slider_img img {
+  height: 500px;
+  width: 600px;
+}
+.offer_button a {
+  color: #000;
+  font-size: 23px;
+  background-color: #ffff00;
+  padding: 34px 64px;
+  border-radius: 30px;
+}
+/*FEEDBACK SECTION*/
+.feedback__inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.feedback_title {
+  margin-bottom: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 12px;
+}
+.feedback_block {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e6fa;
+  border: 1px solid #000;
+  border-radius: 60px;
+  padding: 60px;
+  margin-left: 146px;
+  margin-right: 150px;
+}
+.fd_block_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.fd_block_title img {
+  width: 100px;
+  height: 100px;
+}
+.fd_block_title h4 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 12px;
+}
+.feedback_descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+}
+/*MAPS BLOCK*/
+.maps_inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+}
+.map_info__title {
+  background-color: #ffff00;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+.map_info__title h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 40px;
+}
+.map_info_list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.map_info_wrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.map_info_wrap p {
+  font-size: 15px;
+}
+/*FOOTER SECTION*/
+
+.contact_title {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+.cont__inner {
+  padding: 30px;
+}
+.cont_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.cont_link img {
+  width: 50px;
+  height: 50px;
+}
