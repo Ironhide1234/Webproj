@@ -22,7 +22,7 @@
         <nav class="navbar">
             <ul class="navbar__inner">
                 <li>
-                    <a href="{{ route('home') }}">О компании</a>
+                    <a href="{{ route('private') }}">О компании</a>
                 </li>
                 <li>
                     <a href="{{ route('information') }}">Примеры работ</a>
